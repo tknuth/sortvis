@@ -9,6 +9,7 @@ def mergesort(lst, left=0, right=None):
     mergesort(lst, left, middle)
     mergesort(lst, middle + 1, right)
     i, end_i, j = left, middle, middle + 1
+    # print(i, j)
     while i <= end_i and j <= right:
         if lst[i] < lst[j]:
             i += 1
