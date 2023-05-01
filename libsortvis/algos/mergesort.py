@@ -2,9 +2,10 @@
 def mergesort(lst, left=0, right=None):
     if right is None:
         right = len(lst) - 1
+    # print(lst[left:right+1])
     if left >= right:
         return
-    middle = (left + right) // 2
+    middle = (left+right) // 2
     mergesort(lst, left, middle)
     mergesort(lst, middle + 1, right)
     i, end_i, j = left, middle, middle + 1
