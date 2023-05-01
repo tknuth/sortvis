@@ -13,7 +13,7 @@ def sift(lst, start, count):
             return
 
 def heapsort(lst):
-    start = int((len(lst)/2)-1) # This refers to the last element with children
+    start = int((len(lst)/2)-1) # last element with children
     end = len(lst)-1
     while start >= 0:
         sift(lst, start, len(lst))
